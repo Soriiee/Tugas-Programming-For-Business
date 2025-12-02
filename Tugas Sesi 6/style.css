@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9eef2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #14415f;
+    padding-bottom: 10px;
+}
+
+.input-control {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.input-control label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-control input[type="text"],
+.input-control input[type="email"],
+.input-control input[type="password"],
+.input-control input[type="tel"],
+.input-control select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+}
+
+.input-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.input-control.success input {
+    border-color: #2ecc71;
+}
+
+.input-control.error input {
+    border-color: #e74c3c;
+}
+
+.input-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 12px;
+}
+
+.input-control.error small {
+    visibility: visible;
+}
+
+.inline-label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

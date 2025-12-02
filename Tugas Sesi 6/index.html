@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form Assignment</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <form id="form" novalidate>
+            <h2>Validation Form</h2>
+            
+            <div class="input-control">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName">
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="inline-label">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="inline-label">Female</label>
+                </div>
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label>Hobbies/Interests:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading" class="inline-label">Reading</label>
+                    <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                    <label for="gaming" class="inline-label">Gaming</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports" class="inline-label">Sports</label>
+                </div>
+                <small>Error message</small>
+            </div>
+
+            <div class="input-control">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">--Select Country--</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="US">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="SG">Singapore</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
