@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feet to Meter Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Konversi Panjang</h1>
+        <p>Ubah satuan Kaki (Feet) ke Meter dengan mudah.</p>
+
+        <div class="converter-box">
+            <div class="input-group">
+                <label for="feetInput">Masukkan Kaki (ft):</label>
+                <input type="number" id="feetInput" placeholder="Contoh: 10" oninput="convertLength()">
+            </div>
+
+            <div class="arrow">⬇️</div>
+
+            <div class="input-group">
+                <label for="meterOutput">Hasil dalam Meter (m):</label>
+                <input type="text" id="meterOutput" placeholder="Hasil akan muncul di sini" readonly>
+            </div>
+            
+            <button onclick="resetCalculator()" class="btn-reset">Reset</button>
+        </div>
+        
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
